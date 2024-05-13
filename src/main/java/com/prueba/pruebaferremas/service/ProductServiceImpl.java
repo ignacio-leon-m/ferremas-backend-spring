@@ -3,7 +3,6 @@ package com.prueba.pruebaferremas.service;
 import com.prueba.pruebaferremas.dto.product.ProductDTO;
 import com.prueba.pruebaferremas.model.Product;
 import com.prueba.pruebaferremas.repository.ProductRepository;
-import com.zaxxer.hikari.util.FastList;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

@@ -2,13 +2,13 @@ package com.prueba.pruebaferremas.controller;
 
 import com.prueba.pruebaferremas.dto.product.ProductDTO;
 import com.prueba.pruebaferremas.service.ProductService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200/")
 @RequestMapping("api/product")
 public class ProductController {
     //Variable de tipo ProductService que se encargará de realizar las operaciones con los productos

@@ -1,15 +1,20 @@
 package com.prueba.pruebaferremas.controller.transbank;
 
-import lombok.Getter;
 import com.google.gson.GsonBuilder;
+import lombok.Getter;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 import java.util.logging.Level;
 
-public abstract class BaseController {
+
+public  abstract class BaseController {
     @Getter private Map<String, Object> model = new HashMap<>();
+
+    protected void addModel(String key, Object value) {
+        getModel().put(key, value);
+    }
 
     protected void addRequest(String key, Object value) {
         Object request = getModel().get("request");
