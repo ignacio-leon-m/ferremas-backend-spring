@@ -9,6 +9,8 @@ import java.util.List;
 @Service // Decorador de Spring para indicar que es un servicio
 public interface ProductService {
 
-    //Éste método se encarga de listar todos los productos de la base de datos y se debe implementar en la clase ProductServiceImpl
+    //Éste método se encarga de listar todos los productos de la base de datos
     public List<ProductDTO> listAllProducts();
+    //Éste método se encarga de agregar un producto a la base de datos
+    public ProductDTO addProduct(ProductDTO productDTO);
 }

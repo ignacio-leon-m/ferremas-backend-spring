@@ -27,5 +27,12 @@ public class Product {
 
     @Column(nullable = false, length = 1)
     private short habilitado;
+
+    public Product(String s, BigDecimal bigDecimal, String s1, String electrodoméstico) {
+    }
+
+    public Product() {
+
+    }
 }
 
